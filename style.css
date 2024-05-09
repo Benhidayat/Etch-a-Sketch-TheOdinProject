@@ -1,5 +1,60 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1 px solid lightgreen;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightslategray;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(141, 86, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.baby-div {
+    width: 50%;
+    height: auto;
+    background-color: rgb(10, 20, 105);
+    flex-wrap: nowrap;
+    border: 1px solid lightgreen;
+    flex: 1 1 auto;
+}
+
+.baby-div::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.row-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.start-button,
+.reset-button {
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
 }
